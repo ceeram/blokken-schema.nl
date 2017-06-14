@@ -1,0 +1,129 @@
+html, body {
+	height: 100%;
+}
+
+html {
+  	font-size: 100%;
+  	overflow-y: scroll;
+}
+
+body {
+  	font-size: 14px;
+  	line-height: 1.42857;
+	font-family: 'Open Sans', sans-serif;
+	color: #868686;
+}
+
+body.modal-open {
+    overflow: visible;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 35px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  	margin: 0;
+		line-height: 36px;
+}
+
+/* Links */
+a {
+  	outline: none !important;
+}
+
+a, a:link, a:visited {
+    color: #868686;
+    text-decoration: none;
+}
+
+a, btn, button {
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+a:hover, a:focus {
+    color: #32b8da;
+}
+
+#timetable {
+	padding: 40px;
+}
+
+#timetable .red {
+	background: #eb1d27;
+}
+
+#timetable .timetable-col {
+  	font-weight: 400;
+    cursor: auto;
+	text-align: center;
+	position: relative;
+}
+
+#timetable .timetable-col:hover > .booking-tooltip {
+	display: block;
+  	-webkit-transition: all 0.5s ease-out;
+  	   -moz-transition: all 0.5s ease-out;
+  	     -o-transition: all 0.5s ease-out;
+  	        transition: all 0.5s ease-out;
+}
+
+#timetable h6 {
+	font-weight: 300;
+	margin-top: 5px;
+}
+
+#timetable h5 {
+	margin: 20px;
+}
+
+#timetable table {
+    color: #fff;
+	width: 100%;
+}
+#timetable table tr:nth-child(2n) {
+  	background: #f4f4f4;
+}
+#timetable table tr:nth-child(2n+3) {
+  	background: #fff;
+}
+#timetable table th, #timetable table td {
+  	padding: 25px 10px 25px 10px;
+  	width: auto;
+	border: 2px solid #fff;
+}
+
+#timetable .days, #timetable .time {
+  	text-align: center !important;
+	color: #868686;
+}
+
+#timetable .time {
+  	width: 15% !important;
+}
+
+#timetable {
+	overflow-x: auto;
+}
+
+.gradient-bg-small {
+	background: #eb1d27;
+	background: -webkit-linear-gradient(left, #eb1d27 0%, #eb1d27 20%, #eb1d27 70%);
+	background: -o-linear-gradient(left, #eb1d27 0%, #eb1d27 20%, #eb1d27 70%);
+	background: linear-gradient(to right, #eb1d27 0%, #eb1d27 20%, #eb1d27 70%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb1d27', endColorstr='#eb1d27',GradientType=1 );
+	background-attachment: fixed;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 20px 0;
+	position: relative;
+	color: #fff;
+	border-bottom: 1px solid #ccc;
+}
+
