@@ -127,3 +127,17 @@ a:hover, a:focus {
 	border-bottom: 1px solid #ccc;
 }
 
+footer {
+	background-color: #4c6575;
+	color: #e4e5e7;
+}
+
+footer .footer-slogan {
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	color: rgba(244, 245, 247, 0.6);
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 15px 0;
+}
