@@ -83,6 +83,7 @@ a:hover, a:focus {
 #timetable table {
   color: #fff;
   width: 100%;
+  border-collapse: separate;
 }
 
 #timetable table tr:nth-child(2n) {
@@ -91,6 +92,11 @@ a:hover, a:focus {
 
 #timetable table tr:nth-child(2n+3) {
   background: #fff;
+  background-origin: border-box;
+}
+
+#timetable table tr {
+  background-origin: border-box;
 }
 
 #timetable table th, #timetable table td {
