@@ -30,4 +30,6 @@ $('#myModal').on('show.bs.modal', function (event) {
         return false;
     }
     $('#show').attr('src', url);
+}).on('hidden.bs.modal', function () {
+    $('#show').attr('src', '');
 });
