@@ -1,3 +1,11 @@
+let goToHome = function () {
+    if (window.self !== window.top) {
+        window.top.location.href=window.location.href;
+    } else {
+        window.location = '/';
+    }
+};
+
 let clickingFav = false;
 $( 'i' ).click(function() {
     clickingFav = true;
