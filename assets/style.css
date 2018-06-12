@@ -55,8 +55,13 @@ a:hover, a:focus {
 #timetable .red {
   background: #eb1d27;
 }
+
 #timetable .extra {
   background: linear-gradient(#eb1d27, #7a7a7a, #eb1d27);
+}
+
+#timetable .favorite {
+  font-weight: 600 !important;
 }
 
 #timetable .highlight {

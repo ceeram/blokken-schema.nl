@@ -9,7 +9,9 @@ let goToHome = function () {
 let clickingFav = false;
 $('i').on('click', function() {
     clickingFav = true;
-    $(this).toggleClass('far').toggleClass( 'fas' );
+    let i = $(this);
+    i.toggleClass('far').toggleClass( 'fas' );
+    i.parent().toggleClass('favorite');
     let act = $(this).data('favorite');
     let isFavorite = localStorage.getItem(act);
     if (isFavorite) {
@@ -24,7 +26,9 @@ $(document).ready(function() {
     while ( i-- ) {
         let favorited = localStorage.getItem( keys[i] );
         if (favorited === 'favorited') {
-            $(this).find(`[data-favorite='${keys[i]}']`).toggleClass( 'far' ).toggleClass( 'fas' );
+            let icon = $(this).find(`[data-favorite='${keys[i]}']`);
+            icon.toggleClass( 'far' ).toggleClass( 'fas' );
+            icon.parent().toggleClass('favorite');
         }
     }
 });
