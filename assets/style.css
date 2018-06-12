@@ -156,8 +156,7 @@ footer .footer-slogan {
 i.fa-star {
   vertical-align: top;
   float: right;
-  margin-top: -7px;
-  margin-right: -2px;
+  padding-left: 2px;
 }
 
 .description {
