@@ -159,6 +159,10 @@ i.fa-star {
   margin-top: -7px;
   margin-right: -2px;
 }
+
+.description {
+  margin-bottom: 18px;
+}
 #special-act-modal .modal-header {
   background-color: red;
   color: white;
