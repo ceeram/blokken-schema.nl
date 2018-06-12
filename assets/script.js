@@ -10,7 +10,7 @@ let clickingFav = false;
 $('i').on('click', function() {
     clickingFav = true;
     $(this).toggleClass('far').toggleClass( 'fas' );
-    let act = $(this).data('arg1');
+    let act = $(this).data('favorite');
     let isFavorite = localStorage.getItem(act);
     if (isFavorite) {
         localStorage.removeItem(act);
