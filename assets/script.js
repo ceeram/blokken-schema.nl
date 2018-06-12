@@ -68,6 +68,14 @@ $('#special-act-modal').on('show.bs.modal', function (event) {
         video.hide();
     }
 
+    if (imageUrl) {
+        img.attr('src', imageUrl);
+        img.show();
+    } else {
+        img.attr('src', '');
+        img.hide();
+    }
+
     modal.find('#special-act-modal-label').text(td.data('title'));
     modal.find('#special-act-time').text(td.data('time'));
     modal.find('#special-act-location').text(td.data('location'));
