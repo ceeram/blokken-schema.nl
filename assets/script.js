@@ -28,7 +28,7 @@ $(document).ready(function() {
         }
     }
 });
-$('#myModal').on('show.bs.modal', function (event) {
+$('#act-modal').on('show.bs.modal', function (event) {
     if (clickingFav) {
         clickingFav = false;
         return false;
@@ -40,4 +40,17 @@ $('#myModal').on('show.bs.modal', function (event) {
     $('#show').attr('src', url);
 }).on('hidden.bs.modal', function () {
     $('#show').attr('src', '');
+});
+
+$('#special-act-modal').on('show.bs.modal', function (event) {
+    if (clickingFav) {
+        clickingFav = false;
+        return false;
+    }
+    let td = $(event.relatedTarget); // Button that triggered the modal
+    let modal = $(this);
+    modal.find('#special-act-modal-label').text(td.data('title'));
+    modal.find('#special-act-time').text(td.data('time'));
+    modal.find('#special-act-location').text(td.data('location'));
+    modal.find('.modal-body').html(td.data('description'));
 });
