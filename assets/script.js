@@ -7,10 +7,10 @@ let goToHome = function () {
 };
 
 let clickingFav = false;
-$( 'i' ).click(function() {
+$('i').on('click', function() {
     clickingFav = true;
-    $( this ).toggleClass( 'far' ).toggleClass( 'fas' );
-    let act = ($( this ).data('arg1') );
+    $(this).toggleClass('far').toggleClass( 'fas' );
+    let act = $(this).data('arg1');
     let isFavorite = localStorage.getItem(act);
     if (isFavorite) {
         localStorage.removeItem(act);
@@ -28,6 +28,7 @@ $(document).ready(function() {
         }
     }
 });
+
 $('#act-modal').on('show.bs.modal', function (event) {
     if (clickingFav) {
         clickingFav = false;
