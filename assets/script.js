@@ -63,4 +63,6 @@ $('#special-act-modal').on('show.bs.modal', function (event) {
     modal.find('#special-act-time').text(td.data('time'));
     modal.find('#special-act-location').text(td.data('location'));
     modal.find('.modal-body').find('.description').html(td.data('description'));
+}).on('hidden.bs.modal', function () {
+    $(this).find('video').get(0).pause();
 });
