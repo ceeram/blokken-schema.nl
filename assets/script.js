@@ -54,8 +54,12 @@ $('#special-act-modal').on('show.bs.modal', function (event) {
     }
     let td = $(event.relatedTarget); // Button that triggered the modal
     let videoUrl = td.data('video-url');
+    let imageUrl = td.data('image');
+
     let modal = $(this);
     let video = modal.find('video');
+    let img = modal.find('img');
+
     if (videoUrl) {
         video.html('<source src="' + videoUrl + '" type="video/mp4">');
         video.show();

@@ -9,7 +9,7 @@ html {
 
 body {
   font-size: 12px;
-  line-height: 1.1;
+  line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
   color: #868686;
 }
@@ -168,5 +168,8 @@ i.fa-star {
   opacity: 1;
 }
 #special-act-modal .modal-body {
-  font-size: 1.4em;
+  font-size: 1.1em;
+}
+.interval {
+  vertical-align: text-top;
 }
