@@ -154,8 +154,15 @@ i.fa-star {
 .description {
   margin-bottom: 18px;
 }
+
+.modal-footer {
+  margin-top: -5px;
+  background-color: #eb1d27;
+  color: white;
+}
+
 #special-act-modal .modal-header {
-  background-color: red;
+  background-color: #eb1d27;
   color: white;
 }
 #special-act-modal .modal-header .close {

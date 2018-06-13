@@ -38,10 +38,14 @@ $('#act-modal').on('show.bs.modal', function (event) {
         clickingFav = false;
         return false;
     }
-    let url = $(event.relatedTarget).data('href');
+    let td = $(event.relatedTarget);
+    let url = td.data('href');
     if (!url) {
         return false;
     }
+    let genres = td.data('genres') ? td.data('genres') : '';
+    let modal = $(this).find('.modal-footer').html(genres);
+
     $('#show').attr('src', url);
 }).on('hidden.bs.modal', function () {
     $('#show').attr('src', '');
