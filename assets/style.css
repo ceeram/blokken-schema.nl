@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
   color: #676767;
@@ -82,10 +82,6 @@ a:hover, a:focus {
 #timetable h6 {
   font-weight: 300;
   margin-top: 5px;
-}
-
-#timetable h5 {
-  margin: 20px;
 }
 
 #timetable table {
