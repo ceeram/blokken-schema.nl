@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
   color: #676767;
@@ -16,10 +16,6 @@ body {
 
 body.modal-open {
   overflow: visible;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 35px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
