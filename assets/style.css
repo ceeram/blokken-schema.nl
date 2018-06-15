@@ -51,6 +51,9 @@ a:hover, a:focus {
 #timetable .red {
   background: #eb1d27;
 }
+#timetable .grey {
+  background: #ccc;
+}
 
 #timetable .extra {
   background: linear-gradient(#eb1d27, #7a7a7a, #eb1d27);

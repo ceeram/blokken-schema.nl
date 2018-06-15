@@ -8,16 +8,45 @@ let goToHome = function () {
 
 let clickingFav = false;
 $('i').on('click', function() {
-    clickingFav = true;
     let i = $(this);
+    let parent = i.parent('td');
+    if (parent.length !== 1 || $('#filter-favs').is(':checked')) {
+        return;
+    }
+
+    clickingFav = true;
     i.toggleClass('far').toggleClass( 'fas' );
-    i.parent().toggleClass('favorite');
+    parent.toggleClass('favorite');
     let act = $(this).data('favorite');
     let isFavorite = localStorage.getItem(act);
     if (isFavorite) {
         localStorage.removeItem(act);
     } else {
         localStorage.setItem(act, 'favorited')
+    }
+});
+
+$('#filter-favs').on('click', function (event) {
+    let checked = $(this).is(":checked");
+    let tds = $('.timetable-col');
+    let count = tds.length;
+    if (checked) {
+        $('i.fa-lg').hide();
+    } else {
+        $('i.fa-lg').show();
+        tds.removeClass('grey');
+    }
+    while ( count-- ) {
+        let td = $(tds[count]);
+        td.removeClass('grey');
+        let favorite = td.find('i').data('favorite');
+        if (localStorage.getItem(favorite) !== 'favorited') {
+            if (checked) {
+                td.removeClass('red').addClass('grey');
+            } else {
+                td.addClass('red');
+            }
+        }
     }
 });
 
@@ -39,6 +68,9 @@ $('#act-modal').on('show.bs.modal', function (event) {
         return false;
     }
     let td = $(event.relatedTarget);
+    if ($('#filter-favs').is(':checked') && !td.hasClass('red')) {
+        return false;
+    }
     let url = td.data('href');
     if (!url) {
         return false;
@@ -57,6 +89,10 @@ $('#special-act-modal').on('show.bs.modal', function (event) {
         return false;
     }
     let td = $(event.relatedTarget); // Button that triggered the modal
+    if ($('#filter-favs').is(':checked') && !td.hasClass('red')) {
+        return false;
+    }
+
     let videoUrl = td.data('video-url');
     let imageUrl = td.data('image');
 
