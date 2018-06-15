@@ -40,9 +40,47 @@
                         <!--<li role="presentation"><a href="/images">Print</a></li>-->
                     </ul>
 
-                    <!--<select class="pull-right" title="Genre" name="select-genre">-->
-                        <!--<option value="">Alle genres</option>-->
-                    <!--</select>-->
+                    <select class="pull-right" title="Genre" name="select-genre">
+                        <option value="">Alle genres</option>
+                        <option>a capella</option>
+                        <option>afro-amerikaans</option>
+                        <option>akoestisch</option>
+                        <option>alternative</option>
+                        <option>americana</option>
+                        <option>blues</option>
+                        <option>kleinkunst</option>
+                        <option>close harmony</option>
+                        <option>country</option>
+                        <option>cover</option>
+                        <option>dance</option>
+                        <option>dans</option>
+                        <option>disco</option>
+                        <option>electronisch</option>
+                        <option>feestmuziek</option>
+                        <option>folk</option>
+                        <option>funk</option>
+                        <option>gitaarmuziek</option>
+                        <option>gospel</option>
+                        <option>hardrock</option>
+                        <option value="hip-hop">hip hop / rap</option>
+                        <option>house</option>
+                        <option>indie</option>
+                        <option>jam</option>
+                        <option>jazz</option>
+                        <option>jeugd</option>
+                        <option>klassiek</option>
+                        <option>latin</option>
+                        <option>musical</option>
+                        <option value="nederlandstalig">nederlandstalig en nederpop</option>
+                        <option>pop</option>
+                        <option>punk</option>
+                        <option>rock</option>
+                        <option value="rock-n-roll">rock 'n roll</option>
+                        <option>ska</option>
+                        <option>soul</option>
+                        <option>sport</option>
+                        <option>overig</option>
+                        <option>zang</option>                    </select>
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="friday">
@@ -87,6 +125,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/myra-en-de-bunkers/"
+                                                data-labels='["rock","punk"]'
                                                 data-genres="punkrock"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -98,6 +137,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/sad-iron/"
+                                                data-labels='["hardrock"]'
                                                 data-genres="Speed metal"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -109,6 +149,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/opening-hans-kazan/"
+                                                data-labels='["overig"]'
                                                 data-genres=""
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -120,6 +161,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/little-jam/"
+                                                data-labels='["house"]'
                                                 data-genres="Disco & House"
                                                 class="timetable-col red"
                                                 rowspan="8">
@@ -131,6 +173,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/cafe-chantant/"
+                                                data-labels='["kleinkunst"]'
                                                 data-genres="Cabaret en Kleinkunst"
                                                 class="timetable-col red"
                                                 rowspan="4">
@@ -146,6 +189,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/dirty-ol-men/"
+                                                data-labels='["americana"]'
                                                 data-genres="Americana"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -157,6 +201,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/young-younger/"
+                                                data-labels='["pop"]'
                                                 data-genres="Rock & roll, popmuziek, 50's, 60's, 70's, 80's, 90's en 00's"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -168,6 +213,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/merijn-mooijman-band/"
+                                                data-labels='["soul","pop"]'
                                                 data-genres="soul/pop met funky R&B-achtige elementen"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -200,6 +246,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/cloudy-daze/"
+                                                data-labels='["pop"]'
                                                 data-genres="Sixties pop"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -216,6 +263,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/moers/"
+                                                data-labels='["nederlandstalig","pop"]'
                                                 data-genres="Nederpop"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -227,6 +275,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/wen-and-her-men/"
+                                                data-labels='["pop","rock"]'
                                                 data-genres="Pop & Rock"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -238,6 +287,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/tony-clifton/"
+                                                data-labels='["rock"]'
                                                 data-genres="Garage rock and roll"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -249,6 +299,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/de-hoornse-stadskaraoke/"
+                                                data-labels='["pop"]'
                                                 data-genres="Pop"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -282,6 +333,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/mark-foggo/"
+                                                data-labels='["ska"]'
                                                 data-genres="Ska"
                                                 class="timetable-col red"
                                                 rowspan="4">
@@ -293,6 +345,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/jack-shake-the-wishbones-reunion/"
+                                                data-labels='["pop","rock","funk"]'
                                                 data-genres="Pop/Rock/Funk"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -318,6 +371,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/ryan-benoir/"
+                                                data-labels='["dance"]'
                                                 data-genres="Eclectisch"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -470,6 +524,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/westend-junior/"
+                                                data-labels='["musical","jeugd"]'
                                                 data-genres="Jeugdmusical"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -505,6 +560,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/othello-zaalvoetbal-toernooi/"
+                                                data-labels='["sport"]'
                                                 data-genres="Sport"
                                                 class="timetable-col red"
                                                 rowspan="8">
@@ -519,6 +575,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/moves-hoorn/"
+                                                data-labels='["dans","jeugd"]'
                                                 class="timetable-col red"
                                                 rowspan="2">
                                             <i class="far fa-star fa-lg" data-favorite="moves-hoorn"></i>
@@ -529,6 +586,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/lakeside-stories/"
+                                                data-labels='["singer-songwriter"]'
                                                 data-genres="Diverse genres"
                                                 class="timetable-col red"
                                                 rowspan="8">
@@ -540,6 +598,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/moonliners/"
+                                                data-labels='["a capella"]'
                                                 data-genres="Musical, pop, ballads etc etc"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -559,6 +618,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/boedijn-op-het-kerkplein-2/"
+                                                data-labels='["singer-songwriter","jeugd"]'
                                                 data-genres="klassiek/pop/jazz/singer-songwriter/workshop"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -582,6 +642,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/sport-en-dansstudio-impulz/"
+                                                data-labels='["sport","dans","jeugd"]'
                                                 class="timetable-col red"
                                                 rowspan="1">
                                             <i class="far fa-star fa-lg" data-favorite="impulz"></i>
@@ -592,6 +653,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/menwork/"
+                                                data-labels='["pop","zang"]'
                                                 data-genres="Pop, meerstemmige zang"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -603,6 +665,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/joey-vriend/"
+                                                data-labels='["alternative"]'
                                                 data-genres="alternatief"
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -621,6 +684,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/talent-on-stage/"
+                                                data-labels='["dans","zang"]'
                                                 data-genres="Muziek/dans"
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -634,6 +698,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/hoorns-kinderkoor/"
+                                                data-labels='["zang","jeugd"]'
                                                 class="timetable-col red"
                                                 rowspan="1">
                                             <i class="far fa-star fa-lg" data-favorite="kinderkoor"></i>
@@ -661,6 +726,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/boedijn-op-het-kerkplein/"
+                                                data-labels='["singer-songwriter","jeugd"]'
                                                 data-genres="klassiek/pop/jazz/singer-songwriter/workshop"
                                                 class="timetable-col red"
                                                 rowspan="6">
@@ -674,6 +740,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/dazzling-global-dance-centre-hoorn/"
+                                                data-labels='["dans","jeugd"]'
                                                 class="timetable-col red"
                                                 rowspan="1">
                                             <i class="far fa-star fa-lg" data-favorite="dazzling"></i>
@@ -684,6 +751,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/she-sings/"
+                                                data-labels='["pop"]'
                                                 data-genres="popkoor"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -703,6 +771,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/musical-vereniging-westend-2/"
+                                                data-labels='["musical"]'
                                                 class="timetable-col red"
                                                 rowspan="2">
                                             <i class="far fa-star fa-lg" data-favorite="westend"></i>
@@ -713,6 +782,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/minh-zone-sport-event/"
+                                                data-labels='["sport","dans","jeugd"]'
                                                 class="timetable-col red"
                                                 rowspan="1">
                                             <i class="far fa-star fa-lg" data-favorite="minh-zone"></i>
@@ -723,6 +793,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/the-pool-of-tears/"
+                                                data-labels='["indie"]'
                                                 data-genres="shoegaze, post-rock, blackgaze, dream pop, indie"
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -741,6 +812,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/svens-drumschool/"
+                                                data-labels='["pop","soul","rock"]'
                                                 data-genres="Alles"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -752,6 +824,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/0229-dance-battle/"
+                                                data-labels='["jeugd","dans"]'
                                                 class="timetable-col red"
                                                 rowspan="3">
                                             <i class="far fa-star fa-lg" data-favorite="0229-battle"></i>
@@ -762,6 +835,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/vocallure/"
+                                                data-labels='["close harmony"]'
                                                 data-genres="Close harmony jazz en pop"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -788,6 +862,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/barney-willemse/"
+                                                data-labels='["country"]'
                                                 data-genres="Country"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -799,6 +874,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/brent-dilan/"
+                                                data-labels='["blues"]'
                                                 data-genres="Blues, Soul, Folk, Akoestisch"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -817,6 +893,8 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/urban-satellites/"
+                                                data-labels='["urban"]'
+                                                data-labels='["pop","rock","funk"]'
                                                 data-genres="Pop/Rock/Punk"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -828,6 +906,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/alkmaarse-bigband/"
+                                                data-labels='["jazz"]'
                                                 data-genres="Big Band muziek. Jazz, Swing, Funk, Latin"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -859,6 +938,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/wout-lianne/"
+                                                data-labels='["blues"]'
                                                 data-genres="Blues, pop"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -870,6 +950,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/jordaan-festijn-preview/"
+                                                data-labels='["nederlandstalig"]'
                                                 data-genres="Hollands"
                                                 class="timetable-col red"
                                                 rowspan="12">
@@ -883,6 +964,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/the-gear/"
+                                                data-labels='["cover","soul","pop","rock"]'
                                                 data-genres="Coverband soul/pop/rock"
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -894,6 +976,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/lowells-guards/"
+                                                data-labels='["rock","americana"]'
                                                 data-genres="Countryrock/americana"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -915,6 +998,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/wordspin/"
+                                                data-labels='["hip-hop","rock"]'
                                                 data-genres="Hip-Hop/Rock"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -926,6 +1010,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/breakout/"
+                                                data-labels='["hardrock"]'
                                                 data-genres="Hardrock"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -951,6 +1036,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/sylvia-aimee/"
+                                                data-labels='["pop","country"]'
                                                 data-genres="Pop/Country"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -966,6 +1052,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/just-us/"
+                                                data-labels='["pop"]'
                                                 data-genres="popmuziek"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -979,6 +1066,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/nonoxxx/"
+                                                data-labels='["house"]'
                                                 data-genres="Tech house"
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -998,6 +1086,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/electric-tribe/"
+                                                data-labels='["electronisch"]'
                                                 class="timetable-col red"
                                                 rowspan="2">
                                             <i class="far fa-star fa-lg" data-favorite="electric-tribe"></i>
@@ -1008,6 +1097,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href=""
+                                                data-labels='["rock"]'
                                                 data-genres="Garage Rock"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1019,6 +1109,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/invivas/"
+                                                data-labels='["zang"]'
                                                 data-genres="Zang"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1030,6 +1121,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/fon-tay/"
+                                                data-labels='["house"]'
                                                 data-genres="Latin House/Moombahton/Feestcafé"
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -1051,6 +1143,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/daniel-vina/"
+                                                data-labels='["house"]'
                                                 data-genres="house, progressive house, electro, hardstyle, techhouse, Future bass, Urban"
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -1065,6 +1158,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/brent-emmerink-trio/"
+                                                data-labels='["blues"]'
                                                 data-genres="Blues"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1080,6 +1174,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/jonna-bodien/"
+                                                data-labels='["pop","country"]'
                                                 data-genres="Pop-country"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1093,6 +1188,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/reverend-moses/"
+                                                data-labels='["jazz"]'
                                                 data-genres="souljazz, boogaloo"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1105,6 +1201,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/daenyl/"
+                                                data-labels='["dance"]'
                                                 data-genres="Funk, Nu Disco, Drum & Bass, Pop"
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -1124,6 +1221,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/thof/"
+                                                data-labels='["dance"]'
                                                 data-genres="Dance"
                                                 class="timetable-col red"
                                                 rowspan="8">
@@ -1135,6 +1233,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/rachel/"
+                                                data-labels='["pop","rock"]'
                                                 data-genres="pop, rock"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1146,6 +1245,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/vinnix/"
+                                                data-labels='["dance"]'
                                                 data-genres="Festival, EDM"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1167,6 +1267,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/shepherds-pie/"
+                                                data-labels='["rock","pop"]'
                                                 data-genres="Rock/Pop"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1181,6 +1282,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/king-kirby/"
+                                                data-labels='["pop","rock"]'
                                                 data-genres="Pop/Rock"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1196,6 +1298,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/avu/"
+                                                data-labels='["soul","blues"]'
                                                 data-genres="Soul & Blues"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1208,6 +1311,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/ten-hut/"
+                                                data-labels='["pop","funk"]'
                                                 data-genres="Pop/Funk/niet westerse invloeden"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1237,6 +1341,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/the-legendary-hangovers/"
+                                                data-labels='["rock"]'
                                                 data-genres="countryrock met stevige grooves"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1258,6 +1363,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/peter-benno/"
+                                                data-labels='["disco"]'
                                                 data-genres="Van Disco tot Dance Hits"
                                                 class="timetable-col red"
                                                 rowspan="4">
@@ -1282,6 +1388,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/skytrain/"
+                                                data-labels='["soul","dance","pop","disco"]'
                                                 data-genres="Soul, disco en dance-classics"
                                                 class="timetable-col red"
                                                 rowspan="4">
@@ -1458,6 +1565,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/oecumenische-kerkdienst/"
+                                                data-labels='["overig"]'
                                                 data-genres="kerkdienst"
                                                 class="timetable-col red"
                                                 rowspan="3">
@@ -1542,6 +1650,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/hazeskoor/"
+                                                data-labels='["nederlandstalig"]'
                                                 data-genres="Hazes"
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -1557,6 +1666,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/ooker/"
+                                                data-labels='["afro-amerikaans"]'
                                                 data-genres="Afro-Amerikaans genre"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1597,6 +1707,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/de-optimisten/"
+                                                data-labels='["swing","jazz"]'
                                                 data-genres="Swingende en jazzy nummers uit het Amerikaanse en Engelse repertoire."
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -1629,6 +1740,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/popkoor-balance/"
+                                                data-labels='["pop"]'
                                                 data-genres="Gevarieerd programma met Pop, iets Jazz, Nederlands talig en o.a. Adiemus van Karl Jenkins."
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1644,6 +1756,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/full-house/"
+                                                data-labels='["a capella"]'
                                                 data-genres="A capella"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1664,6 +1777,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/alina-buikdans/"
+                                                data-labels='["dans"]'
                                                 data-genres="Buikdans / oriëntaalse dans"
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -1692,6 +1806,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/popkoor-prestige/"
+                                                data-labels='["pop"]'
                                                 data-genres="De Nieuwste Hits"
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -1725,6 +1840,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/glock-45-ep-release/"
+                                                data-labels='["rock"]'
                                                 data-genres="Shotgun Soul, Rifle 'n' Roll, Country Rock"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1736,6 +1852,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/de-volgspot/"
+                                                data-labels='["pop"]'
                                                 data-genres="Pop"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1747,6 +1864,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/dj-miss-believe/"
+                                                data-labels='["house"]'
                                                 data-genres="Funky House, Tech House"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1758,6 +1876,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/mr-a-balladeer/"
+                                                data-labels='["pop"]'
                                                 data-genres="Pop"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1793,6 +1912,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/boom-boom-barber/"
+                                                data-labels='["rock-n-roll"]'
                                                 data-genres="Rock & Roll/Rockabilly met uitstapjes naar Swing en Blues"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1805,6 +1925,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/popkoor-absolutely-music/"
+                                                data-labels='["pop"]'
                                                 data-genres="Recente en oudere popnummers"
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -1816,6 +1937,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/dog-barking-in-distance/"
+                                                data-labels='["rock"]'
                                                 data-genres="Rock"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1831,6 +1953,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/michael-nobbe/"
+                                                data-labels='["nederlandstalig","pop"]'
                                                 class="timetable-col red"
                                                 rowspan="2">
                                             <i class="far fa-star fa-lg" data-favorite="michael-nobbe"></i>
@@ -1851,6 +1974,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/broadway/"
+                                                data-labels='["pop","musical"]'
                                                 data-genres="pop- en musicalsongs"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1863,6 +1987,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/the-very-80s/"
+                                                data-labels='["disco","pop"]'
                                                 data-genres="Disco, Dance, Pop"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1874,6 +1999,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/4rose/"
+                                                data-labels='["hip-hop"]'
                                                 data-genres="Rap/Hip-Hop"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1892,6 +2018,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/seven-dead-poets/"
+                                                data-labels='["rock"]'
                                                 data-genres=" dramatic - intense rock - theatrical"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1903,6 +2030,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/marlen/"
+                                                data-labels='["rock","alternative"]'
                                                 data-genres="Theatrical pop rock en alternative"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1914,6 +2042,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/the-night-watch/"
+                                                data-labels='["folk"]'
                                                 data-genres="folk noir"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -1940,6 +2069,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/johnny-bravoure/"
+                                                data-labels='["pop"]'
                                                 data-genres="80s/90s classics"
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -1951,6 +2081,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/soul-en-gospelkoor-uptight/"
+                                                data-labels='["soul","gospel"]'
                                                 data-genres="Soul & Gospel"
                                                 class="timetable-col red"
                                                 rowspan="1">
@@ -1990,6 +2121,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/bounds-of-modesty/"
+                                                data-labels='["pop","punk"]'
                                                 data-genres="Pop Punk"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -2001,6 +2133,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/electric-tribe-2/"
+                                                data-labels='["electronisch"]'
                                                 data-genres="live beats/elektronisch"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -2028,6 +2161,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/cc-project/"
+                                                data-labels='["soul","funk"]'
                                                 data-genres="Soul/funk"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -2061,6 +2195,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/two-shakes/"
+                                                data-labels='["blues","rock"]'
                                                 data-genres="Psychedelic Blues Rock"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -2072,6 +2207,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/redemption/"
+                                                data-labels='["gospel"]'
                                                 data-genres="Gospel"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -2093,6 +2229,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/stakbabber/"
+                                                data-labels='["punk"]'
                                                 data-genres="80's, postpunk"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -2111,6 +2248,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/honky-tonk-men/"
+                                                data-labels='["country"]'
                                                 data-genres="country/honky tonk"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -2122,6 +2260,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/paul-chevrolet-the-rocking-cadillacs/"
+                                                data-labels='["rock-n-roll","country"]'
                                                 data-genres="Rock n Roll/Country"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -2135,6 +2274,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/montisgoudsmit-directie/"
+                                                data-labels='["soul","jazz","funk"]'
                                                 data-genres="Soul,jazz,funk groove"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -2157,6 +2297,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/jules-mescaline/"
+                                                data-labels='["pop","rock"]'
                                                 data-genres="Pop/Rock"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -2179,6 +2320,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/bowie-tribute-door-teamtrots/"
+                                                data-labels='["cover"]'
                                                 data-genres="Tribute/ glamrock"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -2190,6 +2332,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/ruben-hoeke/"
+                                                data-labels='["rock","blues"]'
                                                 data-genres="Rock Blues Pop Soul Rhythm & Blues"
                                                 class="timetable-col red"
                                                 rowspan="2">
@@ -2225,6 +2368,7 @@
                                                 data-toggle="modal"
                                                 data-target="#act-modal"
                                                 data-href="https://www.hoornsestadsfeesten.nl/shows/all-star-jam/"
+                                                data-labels='["jam"]'
                                                 data-genres="Jam"
                                                 class="timetable-col red"
                                                 rowspan="2">
