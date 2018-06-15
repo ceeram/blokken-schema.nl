@@ -26,8 +26,9 @@ $('i').on('click', function() {
     }
 });
 
-$('#filter-favs').on('click', function (event) {
+$('.filter-favs').on('click', function (event) {
     let checked = $(this).is(":checked");
+    $('.filter-favs').prop('checked', checked);
     let tds = $('.timetable-col');
     let count = tds.length;
     if (checked) {
@@ -42,9 +43,14 @@ $('#filter-favs').on('click', function (event) {
         let favorite = td.find('i').data('favorite');
         if (localStorage.getItem(favorite) !== 'favorited') {
             if (checked) {
-                td.removeClass('red').addClass('grey');
+                td.removeClass('red').removeClass('extra').addClass('grey');
             } else {
-                td.addClass('red');
+                let target = td.data('target');
+                if (target === '#special-act-modal') {
+                    td.addClass('extra');
+                } else {
+                    td.addClass('red');
+                }
             }
         }
     }
